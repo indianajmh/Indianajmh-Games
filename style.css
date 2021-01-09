@@ -67,14 +67,14 @@ h1, p {
 	color: #e0e0e0;
 	animation: ui_anim2 250ms linear;
 }
+img {
+	vertical-align: middle;
+}
 * {
 	box-sizing: border-box;
 }
 .mySlides {
 	display: none;
-}
-img {
-	vertical-align: middle;
 }
 .slideshow-container {
 	max-width: 1000px;
