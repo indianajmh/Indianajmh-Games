@@ -1,2 +1,2 @@
-# ws-host.mortada-killer0.com
-Just a Open Source Host :D!
+# mortada-killer0.github.com
+Just a Open Source Website :D!
