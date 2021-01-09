@@ -65,7 +65,7 @@ h1, p {
 	padding: 4px 32px;
 	font-family: 'Arial';
 	color: #e0e0e0;
-	animation: ui_anim2 250ms linear;
+	animation: ui_anim2 0.5s linear;
 }
 img {
 	vertical-align: middle;
@@ -92,18 +92,20 @@ img {
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+	border-radius: 8px;
 	user-select: none;
 }
 .next {
 	right: 0;
-	border-radius: 3px 0 0 3px;
+	border-radius: 8px;
 }
 .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: #1188ff;
+	color: black;
 }
 .text {
-	color: #f2f2f2;
+	font-family: 'Arial';
+	color: #e0e0e0;
 	font-size: 15px;
 	padding: 8px 12px;
 	position: absolute;
@@ -112,7 +114,8 @@ img {
 	text-align: center;
 }
 .numbertext {
-	color: #f2f2f2;
+	font-family: 'Arial';
+	color: #e0e0e0;
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
@@ -122,20 +125,20 @@ img {
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
+	margin: 0 8px;
+	background-color: #a9a9a9;
 	border-radius: 25%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-	background-color: #0055FF;
+	background-color: #1188FF;
 }
 .fade {
 	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
+	-webkit-animation-duration: 0.5s;
 	animation-name: fade;
-	animation-duration: 1.5s;
+	animation-duration: 0.5s;
 }
 .topBar {
 	position: relative;
@@ -145,7 +148,7 @@ img {
 	height: 144px;
 	background: #545454;
 	background-size: 100%;
-	animation: ui_anim 250ms linear;
+	animation: ui_anim 0.5s linear;
 }
 .toast {
 	position: absolute;
@@ -156,5 +159,5 @@ img {
 	background: #252525;
 	width: 320px;
 	height: 64px;
-	animation: toast_anim 250ms linear;
+	animation: toast_anim 0.5s linear;
 }
