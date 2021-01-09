@@ -66,6 +66,7 @@ h1, p {
 	font-family: 'Arial';
 	color: #e0e0e0;
 	animation: ui_anim2 0.5s linear;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 img {
 	vertical-align: middle;
@@ -112,6 +113,7 @@ img {
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .numbertext {
 	font-family: 'Arial';
@@ -120,6 +122,7 @@ img {
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .dot {
 	cursor: pointer;
