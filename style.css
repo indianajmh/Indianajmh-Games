@@ -62,7 +62,7 @@ body {
 }
 h1, p {
 	margin: 0px;
-	padding: 0px 32px;
+	padding: 4px 32px;
 	font-family: 'Arial';
 	color: #e0e0e0;
 	animation: ui_anim2 0.5s linear;
@@ -72,7 +72,6 @@ img {
 }
 * {
 	box-sizing: border-box;
-	cursor: wait;
 }
 .mySlides {
 	display: none;
