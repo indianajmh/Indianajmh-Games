@@ -1,2 +1,10 @@
 <?xml version="1.0"?>
+  <blogs>
+    <blog>
+      <img src="img0.png"/>
+      <name>Example Blog</name>
+      <summary>Example Blog Summart</summary>
+      <description>Example Blog Description</description>
+    </blog>
+  </blogs>
 </xml>
