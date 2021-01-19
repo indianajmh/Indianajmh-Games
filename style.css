@@ -141,7 +141,7 @@ img {
 	right: 0px;
 	margin: 0px;
 	padding: 0px;
-	background: #252525;
+	background: rgb(0.08, 0.08, 0.08, 0.5);
 	width: 320px;
 	height: 64px;
 	animation: toast_anim 0.5s linear;
