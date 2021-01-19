@@ -2,15 +2,7 @@
 @keyframes ui_anim {
 	0% {
 		opacity: 0%;
-		margin-top: -32px;
-	}
-	65% {
-		opacity: 100%;
-		margin-top: 0px;
-	}
-	80% {
-		opacity: 100%;
-		margin-top: -8px;
+		margin-top: -64px;
 	}
 	100% {
 		opacity: 100%;
@@ -66,7 +58,6 @@ h1, p {
 	font-family: 'Arial';
 	color: #e0e0e0;
 	animation: ui_anim2 0.5s linear;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 img {
 	vertical-align: middle;
@@ -113,7 +104,6 @@ img {
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .numbertext {
 	font-family: 'Arial';
