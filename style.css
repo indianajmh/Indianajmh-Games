@@ -1,148 +1,56 @@
-
-@keyframes ui_anim {
-	0% {
-		opacity: 0%;
-		margin-top: -64px;
-	}
-	100% {
-		opacity: 100%;
-		margin-top: 0px;
-	}
-}
-@keyframes ui_anim2 {
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@keyframes load {
 	0% {
 		opacity: 0%;
 	}
-	100% {
-		opacity: 100%;
-	}
-}
-@keyframes toast_anim {
-	0% {
-		opacity: 0%;
-		margin-right: -320px;
-	}
-	100% {
-		opacity: 100%;
-		margin-right: 0px;
-	}
-}
-@-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-@media only screen and (max-width: 300px) {
-	.prev, .next,.text {font-size: 11px}
+	100% {}
 }
 body {
-	overflow-x: hidden;
 	margin: 0px;
-	padding: 0px 0px;
-	background-color: #000000;
+	background-color: #e0e8ff;
 }
-h1, p {
-	margin: 0px;
-	padding: 4px 32px;
-	font-family: 'Arial';
-	color: #e0e0e0;
-	animation: ui_anim2 0.5s linear;
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Cairo', sans-serif;
+	margin: 8px 12px;
+	animation: load 500ms linear;
 }
-img {
-	vertical-align: middle;
-}
-* {
-	box-sizing: border-box;
-}
-.mySlides {
-	display: none;
-}
-.slideshow-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
-}
-.prev, .next {
-	cursor: pointer;
+.PageIcon {
 	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -22px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 8px;
-	user-select: none;
+	left: 24px;
+	top: 16px;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 4px;
 }
-.next {
-	right: 0;
-	border-radius: 8px;
-}
-.prev:hover, .next:hover {
-	background-color: #1188ff;
-	color: black;
-}
-.text {
-	font-family: 'Arial';
-	color: #e0e0e0;
-	font-size: 15px;
-	padding: 8px 12px;
+.PageTitle {
 	position: absolute;
-	bottom: 8px;
+	left: 64px;
+	top: 10px;
+}
+.Content {
+	margin: 4px;
+	position: absolute;
+	top: 64px;
+	width: calc(100% - 8px);
+	background-color: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: load 250ms linear;
+}
+.Blog {
+	margin: 16px 16px;
+	padding: 8px 8px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: load 500ms linear;
+}
+.Seperator {
 	width: 100%;
-	text-align: center;
+	height: 2px;
+	background-color: #c1c1c1;
 }
-.numbertext {
-	font-family: 'Arial';
-	color: #e0e0e0;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 8px;
-	background-color: #a9a9a9;
-	border-radius: 25%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-	background-color: #1188FF;
-}
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 0.5s;
-	animation-name: fade;
-	animation-duration: 0.5s;
-}
-.topBar {
-	position: relative;
-	margin: 0px;
-	padding: 0px;
-	width: 100%;
-	height: 64px;
-	background: #101010;
-	background-size: 100%;
-	animation: ui_anim 0.5s linear;
-}
-.toast {
-	position: absolute;
-	top: 72px;
-	right: 0px;
-	margin: 0px;
-	padding: 0px;
-	background: rgb(0.08, 0.08, 0.08, 0.5);
-	width: 320px;
-	height: 64px;
-	animation: toast_anim 0.5s linear;
+.Spacer {
+	margin: 4px;
 }
