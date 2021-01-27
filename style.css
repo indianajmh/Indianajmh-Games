@@ -19,14 +19,14 @@ img {
 	border-radius: 4px;
 	width: calc(100% - 16px);
 	height: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .PageIcon {
 	position: absolute;
-	left: 24px;
-	top: 16px;
+	left: 16px;
+	top: 8px;
 	width: 32px;
 	height: 32px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 4px;
 }
 .PageTitle {
@@ -36,7 +36,7 @@ img {
 }
 .Content {
 	margin: 4px;
-	padding: 8px 8px;
+	padding: 8px;
 	position: absolute;
 	top: 64px;
 	width: calc(100% - 8px);
@@ -45,8 +45,8 @@ img {
 	animation: load 250ms linear;
 }
 .Blog {
-	margin: 8px 8px;
-	padding: 8px 8px;
+	margin: 8px;
+	padding: 8px;
 	background-color: #ffffff;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
