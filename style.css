@@ -11,7 +11,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Cairo', sans-serif;
-	margin: 8px 12px;
+	margin: 8px 8px;
 	animation: load 500ms linear;
 }
 .PageIcon {
@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .Content {
 	margin: 4px;
+	padding: 8px 8px;
 	position: absolute;
 	top: 64px;
 	width: calc(100% - 8px);
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p {
 	animation: load 250ms linear;
 }
 .Blog {
-	margin: 16px 16px;
+	margin: 8px 8px;
 	padding: 8px 8px;
 	background-color: #ffffff;
 	border-radius: 4px;
