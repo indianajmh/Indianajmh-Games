@@ -39,7 +39,7 @@ img {
 	padding: 8px;
 	position: absolute;
 	top: 64px;
-	width: 100%;
+	width: calc(100% - 16px);
 	background-color: #ffffff;
 	border-radius: 16px;
 	animation: load 250ms linear;
