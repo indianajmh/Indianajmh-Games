@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6, p {
 img {
 	margin: 8px;
 	border-radius: 4px;
-	width: calc(100% - 20px);
-	height: 256px
+	width: calc(100% - 16px);
+	height: 256px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .PageIcon {
@@ -39,7 +39,7 @@ img {
 	padding: 8px;
 	position: absolute;
 	top: 64px;
-	width: calc(100% - 8px);
+	width: 100%;
 	background-color: #ffffff;
 	border-radius: 16px;
 	animation: load 250ms linear;
