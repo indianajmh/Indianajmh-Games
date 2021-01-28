@@ -5,8 +5,20 @@
 	}
 	100% {}
 }
+@keyframes link_hover {
+	0% {
+		color: #8866ff;
+	}
+	100% {
+		color: #aa88ff;
+	}
+}
 a {
-	color: #0088ff;
+	color: #8866ff;
+}
+a:hover {
+	color: #bb99ff;
+	animation: link_hover 250ms linear;
 }
 body {
 	margin: 0px;
@@ -18,12 +30,18 @@ h1, h2, h3, h4, h5, h6, p {
 	animation: load 500ms linear;
 	color: #e0e0e0;
 }
+h1 {
+	margin: 4px 8px;
+	color: #0088ff
+}
 img {
 	margin: 8px;
 	border-radius: 4px;
 	width: calc(100% - 16px);
 	height: 256px;
-	box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	object-fit: cover;
+	animation: load 500ms linear;
 }
 .PageIcon {
 	position: absolute;
@@ -36,14 +54,23 @@ img {
 .PageTitle {
 	position: absolute;
 	left: 64px;
-	top: 10px;
+	top: 8px;
 }
-.Content {
-	margin: 0px;
+.SideBar {
 	padding: 8px;
 	position: absolute;
 	top: 64px;
-	width: calc(100% - 16px);
+	width: 15%;
+	background-color: #101010;
+	border-radius: 16px;
+	animation: load 250ms linear;
+}
+.Content {
+	padding: 8px;
+	position: absolute;
+	left: 15%;
+	top: 64px;
+	width: calc(85% - 16px);
 	background-color: #252525;
 	border-radius: 16px;
 	animation: load 250ms linear;

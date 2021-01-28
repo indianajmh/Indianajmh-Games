@@ -3,7 +3,7 @@
     <blog>
       <img src="img0.png"/>
       <name>Example Blog</name>
-      <summary>Example Blog Summart</summary>
+      <summary>Example Blog Summary</summary>
       <description>Example Blog Description</description>
     </blog>
   </blogs>
