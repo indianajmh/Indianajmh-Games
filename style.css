@@ -5,21 +5,25 @@
 	}
 	100% {}
 }
+a {
+	color: #0088ff;
+}
 body {
 	margin: 0px;
-	background-color: #e0e8ff;
+	background-color: #000811;
 }
 h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Cairo', sans-serif;
 	margin: 8px 8px;
 	animation: load 500ms linear;
+	color: #e0e0e0;
 }
 img {
 	margin: 8px;
 	border-radius: 4px;
 	width: calc(100% - 16px);
 	height: 256px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(1, 1, 1, 0.19);
 }
 .PageIcon {
 	position: absolute;
@@ -40,14 +44,14 @@ img {
 	position: absolute;
 	top: 64px;
 	width: calc(100% - 16px);
-	background-color: #ffffff;
+	background-color: #252525;
 	border-radius: 16px;
 	animation: load 250ms linear;
 }
 .Blog {
 	margin: 8px;
 	padding: 8px;
-	background-color: #ffffff;
+	background-color: #333333;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: load 500ms linear;
@@ -55,7 +59,7 @@ img {
 .Seperator {
 	width: 100%;
 	height: 2px;
-	background-color: #e0e0e0;
+	background-color: #555555;
 }
 .Spacer {
 	margin: 4px;
