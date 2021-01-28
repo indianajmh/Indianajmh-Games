@@ -2,18 +2,24 @@
 	<head>
 	<icon></icon>
 		<link rel="stylesheet" href="../style.css">
+		<script src="../script.js"></script> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="../icon.png">
 		<title>360 Initiative</title>
 	</head>
 	<body>
+		<div class="TopBarBg"></div>
 		<img src="../icon.png" class="PageIcon"/>
 		<p class="PageTitle"><strong>360 Initiative</strong></p>
-		<div class="SideBar">
+		<div id="noHamburgerMenu">
+			<button class="HamburgerIcon" onclick="return show('sidebar', 'noHamburgerMenu');"></button>
+		</div>
+		<div id="sidebar" class="HamburgerMenu" style="display: none;">
+			<button class="HamburgerIcon" onclick="return show('noHamburgerMenu', 'sidebar');"></button>
 			<p><a href="../index.html"><strong>Home Page</strong></a></p>
-			<p><a href="">Archives</a></p>
-			<p><a href="../vedios.html">YouTube Vedios</a></p>
-			<p><a href="">Contact</a></p>
+			<div class="Seperator"></div>
+			<p><a href="../archives.html">Archives</a></p>
+			<p><a href="../vedios.html">YouTube Videos</a></p>
 		</div>
 		<div class="Content">
 		<img src="https://cdn.pixabay.com/photo/2017/10/10/22/24/wide-format-2839089_960_720.jpg"/>
@@ -24,7 +30,7 @@
 			<div class="Seperator"></div>
 			<p>Pinku was here</p>
 			<div class="Seperator"></div>
-			<p>Operated by "@MORTADA KILLER0#8786" - 2021 All Rights Reserved.</p>
+			<p>Operated by "@MORTADA KILLER0#8786" & "@PinkuRinku#9561" - 2021 All Rights Reserved.</p>
 			<p>You Can Get the Website Source Code. <a href="https://github.com/mortada-killer0/mortada-killer0.github.io">It's Here!</a></p>
 		</div>
 		
