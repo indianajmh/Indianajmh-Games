@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 @keyframes load {
 	0% {
 		opacity: 0%;
 	}
-	100% {}
+	100% {
+		opacity: 100%;
+	}
 }
 @keyframes link_hover {
 	0% {
@@ -17,11 +18,32 @@
 	0% {
 		color: #ff0000;
 	}
-	33% {
+	10% {
+		color: #ff8800;
+	}
+	20% {
+		color: #ffff00;
+	}
+	30% {
+		color: #88ff00;
+	}
+	40% {
 		color: #00ff00;
 	}
-	67% {
+	50% {
+		color: #0088ff;
+	}
+	60% {
 		color: #0000ff;
+	}
+	70% {
+		color: #8800ff;
+	}
+	80% {
+		color: #ff0000;
+	}
+	90% {
+		color: #ffffff;
 	}
 	100% {
 		color: #ff0000;
@@ -61,21 +83,21 @@ body {
 	animation: living_bg 3s linear infinite;
 }
 h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Cairo', sans-serif;
 	margin: 8px 8px;
+	font-family: 'Segoe UI', sans-serif;
 	animation: load 250ms linear;
 	color: #e0e0e0;
 }
 h1 {
 	margin: 4px 8px;
-	color: #0088ff
+	color: #0088ff;
 }
 img {
 	margin: 8px;
 	border-radius: 4px;
 	width: calc(100% - 16px);
 	height: 256px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 	object-fit: cover;
 	animation: load 250ms linear;
 }
@@ -114,8 +136,44 @@ img {
 }
 .PageTitle {
 	position: fixed;
-	left: 112px;
+	left: 120px;
+	top: 12px;
+}
+.PageIconPC {
+	position: fixed;
+	left: 8px;
 	top: 8px;
+	width: 32px;
+	height: 32px;
+	border-radius: 4px;
+	background-color: #0088ff;
+}
+.PageTitlePC {
+	position: fixed;
+	left: 56px;
+	top: 12px;
+}
+.SideBar {
+	position: fixed;
+	margin-top: 8px;
+	padding: 8px;
+	top: 64px;
+	width: calc(15% - 12px);
+	background-color: #101010;
+	border-radius: 12px;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	animation: load 120ms linear;
+}
+.SideBar2 {
+	position: fixed;
+	margin-top: 136px;
+	padding: 8px;
+	top: 64px;
+	width: calc(15% - 12px);
+	background-color: #101010;
+	border-radius: 12px;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	animation: load 120ms linear;
 }
 .Content {
 	padding: 8px;
@@ -125,12 +183,20 @@ img {
 	border-radius: 16px;
 	animation: load 250ms linear;
 }
+.ContentPC {
+	padding: 8px;
+	margin-left: calc(15% + 4px);
+	width: calc(85% - 12px);
+	background-color: #252525;
+	border-radius: 16px;
+	animation: load 250ms linear;
+}
 .Blog {
 	margin: 8px;
 	padding: 8px;
 	background-color: #333333;
 	border-radius: 8px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 	animation: load 250ms linear;
 }
 .Seperator {
@@ -142,32 +208,32 @@ img {
 	margin: 4px;
 }
 .YouTubeVedioThumbnail {
-	width: 196px;
-	height: 108px;
+	width: 128px;
+	height: 80px;
 }
 .YouTubeVedioTitle {
-	margin-left: 216px;
-	margin-top: -116px;
+	margin-left: 150px;
+	margin-top: -88px;
 }
 .YouTubeVedioDesc {
-	margin-left: 216px;
+	margin-left: 150px;
 }
 .YouTubeVedioAuthour {
-	margin-left: 216px;
+	margin-left: 150px;
 }
 .HamburgerMenu {
 	padding: 8px;
 	position: fixed;
 	top: 64px;
-	width: 15%;
+	width: 100%;
 	background-color: #101010;
-	border-radius: 0px 0px 16px 0px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 16px;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
 	animation: slide_down_slightly 120ms linear;
 }
 .SubToPinku {
-	color: #e0e0e0;
-	animation: sub_to_pinku 500ms linear infinite;
+	color: #e0e0e0px;
+	animation: sub_to_pinku 1s linear infinite;
 }
 .TopBarBg {
 	position: fixed;
@@ -177,7 +243,7 @@ img {
 	height: 64px;
 	border-radius: 0px;
 	background-image: url(res/topbarBg.png);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
 }
