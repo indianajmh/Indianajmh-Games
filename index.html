@@ -1,44 +1,190 @@
-<html>
+<html lang="en-US">
 	<head>
 		<link rel="stylesheet" href="style.css">
-		<script src="script.js"></script> 
+		<script src="script.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="icon.png">
 		<title>360 Initiative</title>
 	</head>
 	<body>
-		<div class="TopBarBg"></div>
-		<img src="icon.png" class="PageIconPC"/>
-		<p class="PageTitlePC"><strong>360 Initiative</strong></p>
-		<div class="Content">
-			<div class="SideBar">
-				<p><a href="index.html"><strong>Home Page</strong></a></p>
-				<div class="Seperator"></div>
-				<p><a href="archives.html">Archives</a></p>
-				<p><a href="videos.html">YouTube Videos</a></p>
-			</div>
-			<div class="SideBar2">
-				<p><a href="">Send Feedback</a></p>
-				<p><a href="">Report Bugs</a></p>
-			</div>
-			<div class="ContentPC">
-				<h1>Projects</h1>
-				<div class="Blog">
-					<p style="color: #888888;">Empty.</p>
-				</div>
-				<div class="Seperator"></div>
-				<h1>Posts</h1>
-				<div class="Blog">
-					<p><strong><a href="blog/we_got_our_new_site.html">WE GOT OUR NEW SITE!</a></strong></p>
-					<div class="Seperator"></div>
-					<p style="color: #888888;">What a great time to have a cozy looking website that is made for everything!</p>
-				</div>
-			</div>
-			<div class="Seperator"></div>
-			<p>Operated by "@MORTADA KILLER0#8786" & "@PinkuRinku#9561" - 2021 All Rights Reserved.</p>
-			<p>You Can Get the Website Source Code. <a href="https://github.com/mortada-killer0/mortada-killer0.github.io">It's Here!</a></p>
-			<div class="Seperator"></div>
-			<p>Using a Phone or Tablet? Tab or Click <a href="index-pe.html">This</a> to Fix it For You.</p>
+		<div class="TopBarBg">
+			<img src="icon.png" class="PageIconPC"/>
+			<p class="PageTitlePC"><b>360 Initiative Studios</b></p>
 		</div>
+		<div id="index">
+			<div class="Content">
+				<div class="SideBar">
+					<p><a href="#" onclick="snd_modern_ui_click.play();" class="WhiteText"><img src="assets/index.png" class="SideBarIcon"/><b>Home Page</b></a></p>
+					<div class="Seperator"></div>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('store','index');" class="WhiteText"><img src="assets/store.png" class="SideBarIcon"/>Web Store</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('archives','index');" class="WhiteText"><img src="assets/archives.png" class="SideBarIcon"/>Archives</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('videos','index');" class="WhiteText"><img src="assets/videos.png" class="SideBarIcon"/>YouTube Videos</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('source','index');" class="WhiteText"><img src="assets/source.png" class="SideBarIcon"/>Source Code</a></p>
+				</div>
+				<div class="SideBar2">
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','index');" class="WhiteText"><img src="assets/feedback.png" class="SideBarIcon"/>Send Feedback</a></p>
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','index');" class="WhiteText"><img src="assets/bugs.png" class="SideBarIcon"/>Report Bugs</a></p>
+				</div>
+				<div class="ContentPC">
+					<h1 style="margin-bottom: 16px;">Just a Image</h1>
+					<div id="image0" class="SlideshowImageBase">
+						<img src="assets/banner.jpg" class="SlideshowImage"/>
+						<p class="SlideshowText">Image of the Week!</p>
+					</div>
+					<div class="Seperator"></div>
+					<h1>Projects</h1>
+					<div class="Blog">
+						<p style="color: #888888;">Empty.</p>
+					</div>
+					<div class="Seperator"></div>
+					<h1>Blog Posts</h1>
+					<div class="Blog">
+						<p><b><a href="blog-posts/we_got_our_new_site.html" onclick="snd_modern_ui_click.play();">WE GOT OUR NEW SITE!</a></b></p>
+						<div class="Seperator"></div>
+						<p style="color: #888888;">What a great time to have a cozy looking website that is made for everything!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="store" style="display: none;">
+			<div class="Content">
+				<div class="SideBar">
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('index','store');" class="WhiteText"><img src="assets/index.png" class="SideBarIcon"/><b>Home Page</b></a></p>
+					<div class="Seperator"></div>
+					<p><a href="#" onclick="snd_modern_ui_click.play();" class="WhiteText"><img src="assets/store.png" class="SideBarIcon"/>Web Store</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('archives','store');" class="WhiteText"><img src="assets/archives.png" class="SideBarIcon"/>Archives</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('videos','store');" class="WhiteText"><img src="assets/videos.png" class="SideBarIcon"/>YouTube Videos</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('source','store');" class="WhiteText"><img src="assets/source.png" class="SideBarIcon"/>Source Code</a></p>
+				</div>
+				<div class="SideBar2">
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','store');" class="WhiteText"><img src="assets/feedback.png" class="SideBarIcon"/>Send Feedback</a></p>
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','store');" class="WhiteText"><img src="assets/bugs.png" class="SideBarIcon"/>Report Bugs</a></p>
+				</div>
+				<div class="ContentPC">
+					<h1 style="font-size: 124px;">404</h1>
+					<h1>The Page isn't Available!</h1>
+					<p>This page is under construction!</p>
+				</div>
+			</div>
+		</div>
+		<div id="archives" style="display: none;">
+			<div class="Content">
+				<div class="SideBar">
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('index','archives');" class="WhiteText"><img src="assets/index.png" class="SideBarIcon"/><b>Home Page</b></a></p>
+					<div class="Seperator"></div>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('store','archives');" class="WhiteText"><img src="assets/store.png" class="SideBarIcon"/>Web Store</a></p>
+					<p><a href="#" onclick="snd_modern_ui_click.play();" class="WhiteText"><img src="assets/archives.png" class="SideBarIcon"/>Archives</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('videos','archives');" class="WhiteText"><img src="assets/videos.png" class="SideBarIcon"/>YouTube Videos</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('source','archives');" class="WhiteText"><img src="assets/source.png" class="SideBarIcon"/>Source Code</a></p>
+				</div>
+				<div class="SideBar2">
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','archives');" class="WhiteText"><img src="assets/feedback.png" class="SideBarIcon"/>Send Feedback</a></p>
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','archives');" class="WhiteText"><img src="assets/bugs.png" class="SideBarIcon"/>Report Bugs</a></p>
+				</div>
+				<div class="ContentPC">
+					<h1>Archives</h1>
+					<div class="Blog">
+						<p style="color: #888888;">Empty.</p>
+					</div>
+					<div class="Seperator"></div>
+					<h1>Releases</h1>
+					<div class="Blog">
+						<p style="color: #888888;">Empty.</p>
+					</div>
+					<div class="Seperator"></div>
+					<h1>Minecraft: Java Edition - Texture Packs</h1>
+					<div class="Blog">
+						<p style="color: #888888;">Empty.</p>
+					</div>
+					<div class="Seperator"></div>
+					<h1>Minecraft: Java Edition - Worlds</h1>
+					<div class="Blog">
+						<p style="color: #888888;">Empty.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="videos" style="display: none;">
+			<div class="Content">
+				<div class="SideBar">
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('index','videos');" class="WhiteText"><img src="assets/index.png" class="SideBarIcon"/><b>Home Page</b></a></p>
+					<div class="Seperator"></div>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('store','videos');" class="WhiteText"><img src="assets/store.png" class="SideBarIcon"/>Web Store</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('archives','videos');" class="WhiteText"><img src="assets/archives.png" class="SideBarIcon"/>Archives</a></p>
+					<p><a href="#" onclick="snd_modern_ui_click.play();" class="WhiteText"><img src="assets/videos.png" class="SideBarIcon"/>YouTube Videos</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('source','videos');" class="WhiteText"><img src="assets/source.png" class="SideBarIcon"/>Source Code</a></p>
+				</div>
+				<div class="SideBar2">
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','videos');" class="WhiteText"><img src="assets/feedback.png" class="SideBarIcon"/>Send Feedback</a></p>
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','videos');" class="WhiteText"><img src="assets/bugs.png" class="SideBarIcon"/>Report Bugs</a></p>
+				</div>
+				<div class="ContentPC">
+					<h1>Videos from YouTube</h1>
+					<div class="Blog">
+						<img class="YouTubeVedioThumbnail" src="https://i.ytimg.com/vi/XPWEbvAknY0/maxresdefault.jpg"/>
+						<p class="YouTubeVedioTitle"><a href="https://youtu.be/XPWEbvAknY0" onclick="snd_modern_ui_click.play();"><b>I explored a Minecraft World for OVER 10 HOURS</b></a></p>
+						<p class="YouTubeVedioDesc" style="color: #888888;">I decided to explore a Minecraft world for 10 hours. I have no clue why I did this but it was a lot of fun to do.</p>
+						<p class="YouTubeVedioAuthour"><a href="https://www.youtube.com/channel/UCEh2vxNdDr6n3Hi_3QsrCsA" onclick="snd_modern_ui_click.play();">PinkuRinku</a></p>
+					</div>
+					<div class="Blog">
+						<img class="YouTubeVedioThumbnail" src="https://i.ytimg.com/vi/Lcr-B12nQaA/maxresdefault.jpg"/>
+						<p class="YouTubeVedioTitle"><a href="https://youtu.be/Lcr-B12nQaA" onclick="snd_modern_ui_click.play();"><b>Breaking Minecraft Worlds!</b></a></p>
+						<p class="YouTubeVedioDesc" style="color: #888888;">So apparently there is also a way to mess with our world saves...</p>
+						<p class="YouTubeVedioAuthour"><a href="https://www.youtube.com/channel/UCEh2vxNdDr6n3Hi_3QsrCsA" onclick="snd_modern_ui_click.play();">PinkuRinku</a></p>
+					</div>
+					<div class="Blog">
+						<img class="YouTubeVedioThumbnail" src="https://i.ytimg.com/vi/AHuY7iCQaoc/maxresdefault.jpg"/>
+						<p class="YouTubeVedioTitle"><a href="https://youtu.be/AHuY7iCQaoc" onclick="snd_modern_ui_click.play();"><b>Minecraft: Australia Edition (Playing Minecraft Upside Down)</b></a></p>
+						<p class="YouTubeVedioDesc" style="color: #888888;">So I decided to give the Upside Down Minecraft trend a try.</p>
+						<p class="YouTubeVedioAuthour"><a href="https://www.youtube.com/channel/UCEh2vxNdDr6n3Hi_3QsrCsA" onclick="snd_modern_ui_click.play();">PinkuRinku</a></p>
+					</div>
+					<div class="Blog">
+						<img class="YouTubeVedioThumbnail" src="https://i.ytimg.com/vi/8oLpSUVhltY/maxresdefault.jpg"/>
+						<p class="YouTubeVedioTitle"><a href="https://youtu.be/8oLpSUVhltY" onclick="snd_modern_ui_click.play();"><b>Breaking Minecraft through its settings!</b></a></p>
+						<p class="YouTubeVedioDesc" style="color: #888888;">It's very easy to customize and break Minecraft's options so that is what I did</p>
+						<p class="YouTubeVedioAuthour"><a href="https://www.youtube.com/channel/UCEh2vxNdDr6n3Hi_3QsrCsA" onclick="snd_modern_ui_click.play();">PinkuRinku</a></p>
+					</div>
+					<div class="Blog">
+						<p style="color: #888888;">For More Videos. Wait for the Owner to Add a Vedio.</p>
+					</div>
+					<div class="Seperator"></div>
+					<p class="SubToPinku"><b>Subscribe to PinkuRinku :)</b></p>
+					<p class="SubToPinku"><b>Mortada did a awesome job making this site :)</b></p>
+					<p class="SubToPinku"><b>COLOURS!!!!! I'M HAVING A SEIZURE!!!!!</b></p>
+				</div>
+			</div>
+		</div>
+		<div id="source" style="display: none;">
+			<div class="Content">
+				<div class="SideBar">
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('index','source');" class="WhiteText"><img src="assets/index.png" class="SideBarIcon"/><b>Home Page</b></a></p>
+					<div class="Seperator"></div>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('store','source');" class="WhiteText"><img src="assets/store.png" class="SideBarIcon"/>Web Store</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('archives','source');" class="WhiteText"><img src="assets/archives.png" class="SideBarIcon"/>Archives</a></p>
+					<p><a href="#" onclick="snd_modern_ui_whoosh.play(); return show('videos','source');" class="WhiteText"><img src="assets/videos.png" class="SideBarIcon"/>YouTube Videos</a></p>
+					<p><a href="#" onclick="snd_modern_ui_click.play();" class="WhiteText"><img src="assets/source.png" class="SideBarIcon"/>Source Code</a></p>
+				</div>
+				<div class="SideBar2">
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','source');" class="WhiteText"><img src="assets/feedback.png" class="SideBarIcon"/>Send Feedback</a></p>
+					<p><a href="" onclick="snd_modern_ui_whoosh.play(); return show('feedback','source');" class="WhiteText"><img src="assets/bugs.png" class="SideBarIcon"/>Report Bugs</a></p>
+				</div>
+				<div class="ContentPC">
+					<h1>Source Code</h1>
+					<p>This project is open source, so go fork the source and make your own website from it :)<br/>Don't forget to credit us for the efforts and work!</p>
+					<p>And for the million-th time. You can get the website source code. <a href="https://github.com/mortada-killer0/mortada-killer0.github.io">It's Here!</a></p>
+					<img src="https://miro.medium.com/max/719/1*WaaXnUvhvrswhBJSw4YTuQ.png" style="width: 20%;"/>
+				</div>
+			</div>
+		</div>
+		<div id="feedback" style="display: none;">
+			<h1 class="FeedbackTitle">Send Feedback or Report Bugs</h1>
+			<p class="FeedbackDesc">Send Feedback or Report Bugs by Directly Messaging Mortada Via His Discord Tag: "@MORTADA KILLER0#8786"<br/>Don't Message if There No Real Problems in the Site.</p>
+			<p><a href="#" onclick="snd_modern_ui_click.play(); return show('index','feedback');" class="FeedbackLink"><b>Go Back to Home Page</b></a></p>
+			<div class="Seperator"></div>
+		</div>
+		<p>Operated by MORTADA KILLER0 & PinkuRinku - 2021 All Rights Reserved.</p>
+		<p>You Can Get the Website Source Code. <a href="https://github.com/mortada-killer0/mortada-killer0.github.io">It's Here!</a></p>
+		<!-- <div class="Seperator"></div> -->
+		<!-- <p>Using a Phone or Tablet? Tab or Click <a href="index-pe.html">This</a> to Fix it For You.</p> -->
 	</body>
 </html>

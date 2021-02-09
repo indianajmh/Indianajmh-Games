@@ -1,5 +1,6 @@
 @keyframes load {
 	0% {
+		margin-left: 50%;
 		opacity: 0%;
 	}
 	100% {
@@ -8,10 +9,24 @@
 }
 @keyframes link_hover {
 	0% {
-		color: #8866ff;
+		margin-left: 4px;
+		color: #888888;
+		background-color: rgba(255, 255, 255, 0);
 	}
 	100% {
-		color: #aa88ff;
+		color: #0088ff;
+		background-color: rgba(0, 127, 255, 0.164);
+	}
+}
+@keyframes link_hover2 {
+	0% {
+		margin-left: 124px;
+		color: #696969;
+		background-color: rgba(255, 255, 255, 0);
+	}
+	100% {
+		color: #0088ff;
+		background-color: rgba(0, 127, 255, 0.164);
 	}
 }
 @keyframes sub_to_pinku {
@@ -43,7 +58,7 @@
 		color: #ff0000;
 	}
 	90% {
-		color: #ffffff;
+		color: #646464;
 	}
 	100% {
 		color: #ff0000;
@@ -59,47 +74,43 @@
 		opacity: 100%;
 	}
 }
-@keyframes living_bg {
-	0% {
-		background-color: #000811;
-	}
-	50% {
-		background-color: #001022;
-	}
-	100% {
-		background-color: #000811;
-	}
+* {
+	overflow-x: hidden;
 }
 a {
-	color: #8866ff;
+	color: #696969;
+	text-decoration: none;
 }
 a:hover {
-	color: #bb99ff;
-	animation: link_hover 250ms linear;
+	color: #0088ff;
+	background-color: rgba(0, 127, 255, 0.164);
+	animation: link_hover 250ms ease-out;
+	border-radius: 8px;
+}
+audio {
+	display: none;
 }
 body {
 	margin: 0px;
-	background-color: #000811;
-	animation: living_bg 3s linear infinite;
+	background-color: #ffffff;
+	animation: living_bg 3s ease-out infinite;
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin: 8px 8px;
 	font-family: 'Segoe UI', sans-serif;
-	animation: load 250ms linear;
-	color: #e0e0e0;
+	animation: load 500ms ease-out;
+	color: #404040;
 }
 h1 {
 	margin: 4px 8px;
 	color: #0088ff;
+	font-weight: lighter;
 }
 img {
 	margin: 8px;
 	border-radius: 4px;
-	width: calc(100% - 16px);
-	height: 256px;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	object-fit: cover;
-	animation: load 250ms linear;
+	animation: load 500ms ease-out;
 }
 .HamburgerIcon {
 	position: fixed;
@@ -111,7 +122,7 @@ img {
 	background-image: url(res/menu_norm.png);
 	border: 0px;
 	background-color: rgba(0, 0, 0, 0);
-	animation: load 250ms linear;
+	animation: load 500ms ease-out;
 	cursor: pointer;
 }
 .HamburgerIcon:hover {
@@ -162,63 +173,65 @@ img {
 	background-color: #101010;
 	border-radius: 12px;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	animation: load 120ms linear;
+	animation: load 120ms ease-out;
 }
 .SideBar2 {
 	position: fixed;
-	margin-top: 136px;
+	margin-top: 195px;
 	padding: 8px;
 	top: 64px;
 	width: calc(15% - 12px);
 	background-color: #101010;
 	border-radius: 12px;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	animation: load 120ms linear;
+	animation: load 120ms ease-out;
 }
 .Content {
 	padding: 8px;
 	margin-top: 64px;
 	width: calc(100% - 16px);
-	background-color: #252525;
+	background-color: #e0e0e0;
 	border-radius: 16px;
-	animation: load 250ms linear;
+	animation: load 500ms ease-out;
 }
 .ContentPC {
 	padding: 8px;
 	margin-left: calc(15% + 4px);
 	width: calc(85% - 12px);
-	background-color: #252525;
+	background-color: #e0e0e0;
 	border-radius: 16px;
-	animation: load 250ms linear;
+	animation: load 500ms ease-out;
 }
 .Blog {
 	margin: 8px;
 	padding: 8px;
-	background-color: #333333;
+	background-color: #ffffff;
 	border-radius: 8px;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	animation: load 250ms linear;
+	overflow: hidden;
+	animation: load 500ms ease-out;
 }
 .Seperator {
 	width: 100%;
 	height: 2px;
-	background-color: #555555;
+	background-color: #888888;
 }
 .Spacer {
 	margin: 4px;
 }
-.YouTubeVideoThumbnail {
+.YouTubeVedioThumbnail {
 	width: 128px;
 	height: 80px;
+	box-shadow: none;
 }
-.YouTubeVideoTitle {
+.YouTubeVedioTitle {
 	margin-left: 150px;
 	margin-top: -88px;
 }
-.YouTubeVideoDesc {
+.YouTubeVedioDesc {
 	margin-left: 150px;
 }
-.YouTubeVideoAuthour {
+.YouTubeVedioAuthour {
 	margin-left: 150px;
 }
 .HamburgerMenu {
@@ -229,11 +242,11 @@ img {
 	background-color: #101010;
 	border-radius: 16px;
 	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	animation: slide_down_slightly 120ms linear;
+	animation: slide_down_slightly 120ms ease-out;
 }
 .SubToPinku {
-	color: #e0e0e0px;
-	animation: sub_to_pinku 1s linear infinite;
+	color: #404040px;
+	animation: sub_to_pinku 1s ease-out infinite;
 }
 .TopBarBg {
 	position: fixed;
@@ -241,9 +254,45 @@ img {
 	top: 0px;
 	width: 100%;
 	height: 64px;
-	border-radius: 0px;
-	background-image: url(res/topbarBg.png);
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.WhiteText {
+	color: #e0e0e0;
+}
+.FeedbackTitle {
+	margin-left: 128px;
+	margin-right: 128px;
+	margin-top: 72px;
+}
+.FeedbackDesc {
+	margin-left: 128px;
+	margin-right: 128px;
+	margin-bottom: 72px;
+}
+.FeedbackLink, .FeedbackLink:hover, .FeedbackLink:focus {
+	margin-left: 120px;
+	margin-right: 128px;
+}
+.FeedbackLink:hover {
+	animation: link_hover2 250ms ease-out;
+}
+.SlideshowImageBase {
+	margin-top: -8px;
+}
+.SlideshowImage {
+	width: calc(100% - 16px);
+	height: 255px;
+	object-fit: cover;
+	margin: 0px 8px;
+	border-radius: 8px;
+}
+.SlideshowText {
+	text-align: center;
+}
+.SideBarIcon {
+	margin: 0px;
+	margin-right: 8px;
+	width: 16px;
+	border-radius: 8px;
+	height: 16px;
 }
