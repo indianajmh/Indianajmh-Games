@@ -219,19 +219,19 @@ img {
 .Spacer {
 	margin: 4px;
 }
-.YouTubeVedioThumbnail {
+.YouTubeVideoThumbnail {
 	width: 128px;
 	height: 80px;
 	box-shadow: none;
 }
-.YouTubeVedioTitle {
+.YouTubeVideoTitle {
 	margin-left: 150px;
 	margin-top: -88px;
 }
-.YouTubeVedioDesc {
+.YouTubeVideoDesc {
 	margin-left: 150px;
 }
-.YouTubeVedioAuthour {
+.YouTubeVideoAuthor {
 	margin-left: 150px;
 }
 .HamburgerMenu {
