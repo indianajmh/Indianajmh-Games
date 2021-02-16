@@ -188,16 +188,17 @@ img {
 }
 .Content {
 	padding: 8px;
+	margin-left: 4px;
 	margin-top: 64px;
-	width: calc(100% - 16px);
+	width: calc(100% - 16px - 8px);
 	background-color: #e0e0e0;
 	border-radius: 16px;
 	animation: load 500ms ease-out;
 }
 .ContentPC {
 	padding: 8px;
-	margin-left: calc(15% + 4px);
-	width: calc(85% - 12px);
+	margin-left: calc(15% + 8px);
+	width: calc(85% - 12px - 4px);
 	background-color: #e0e0e0;
 	border-radius: 16px;
 	animation: load 500ms ease-out;
@@ -231,7 +232,7 @@ img {
 .YouTubeVideoDesc {
 	margin-left: 150px;
 }
-.YouTubeVideoAuthor {
+.YouTubeVideoAuthour {
 	margin-left: 150px;
 }
 .HamburgerMenu {
@@ -295,4 +296,12 @@ img {
 	width: 16px;
 	border-radius: 8px;
 	height: 16px;
+	box-shadow: none;
+}
+.Panel {
+	margin: 8px;
+	padding: 0px;
+	width: calc(100% - 20px);
+	height: 75%;
+	border-style: inset;
 }
