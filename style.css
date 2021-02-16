@@ -21,7 +21,7 @@
 @keyframes link_hover2 {
 	0% {
 		margin-left: 124px;
-		color: #696969;
+		color: #888888;
 		background-color: rgba(255, 255, 255, 0);
 	}
 	100% {
@@ -65,32 +65,53 @@
 	}
 }
 @keyframes slide_down_slightly {
-	0% {
+	from {
 		margin-top: -32px;
-		opacity: 0%;
+		opacity: 0;
 	}
-	100% {
-		margin-top: 0px;
+	to {
+		margin-top: 0;
 		opacity: 100%;
+	}
+}
+@keyframes toast {
+	from {
+		transform: translate(0, calc(50% - 100% + 8px));
+	}
+	to {
+		transform: translate(0, calc(-100% - 56px + 28px));
+	}
+}
+@keyframes toast_out {
+	from {
+		transform: translate(0, calc(-100% - 56px + 28px));
+		color: #404040;
+	}
+	to {
+		transform: translate(0, calc(50% - 100% + 8px));
+		color: #ffffff;
 	}
 }
 * {
 	overflow-x: hidden;
+	cursor: crosshair;
 }
 a {
-	text-decoration: none;
+	color: #0088ff;
 }
 a:hover {
 	color: #0088ff;
 	background-color: rgba(0, 127, 255, 0.164);
 	animation: link_hover 250ms ease-out;
-	border-radius: 8px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgba(0, 127, 255, 0.024);
 }
 audio {
 	display: none;
 }
 body {
-	margin: 0px;
+	margin: 0;
 	background-color: #ffffff;
 	animation: living_bg 3s ease-out infinite;
 }
@@ -108,7 +129,7 @@ h1 {
 img {
 	margin: 8px;
 	border-radius: 4px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: load 500ms ease-out;
 }
 .HamburgerIcon {
@@ -119,7 +140,7 @@ img {
 	height: 32px;
 	background-size: cover;
 	background-image: url(res/menu_norm.png);
-	border: 0px;
+	border: 0;
 	background-color: rgba(0, 0, 0, 0);
 	animation: load 500ms ease-out;
 	cursor: pointer;
@@ -132,7 +153,7 @@ img {
 	height: 32px;
 	background-size: cover;
 	background-image: url(res/menu_over.png);
-	border: 0px;
+	border: 0;
 	background-color: rgba(0, 0, 0, 0);
 }
 .PageIcon {
@@ -146,7 +167,7 @@ img {
 }
 .PageTitle {
 	position: fixed;
-	left: 120px;
+	left: 120;
 	top: 12px;
 }
 .PageIconPC {
@@ -171,19 +192,12 @@ img {
 	width: calc(15% - 12px);
 	background-color: #101010;
 	border-radius: 12px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: load 120ms ease-out;
 }
 .SideBar2 {
 	position: fixed;
 	margin-top: 195px;
-	padding: 8px;
-	top: 64px;
-	width: calc(15% - 12px);
-	background-color: #101010;
-	border-radius: 12px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
-	animation: load 120ms ease-out;
 }
 .Content {
 	padding: 8px;
@@ -207,7 +221,7 @@ img {
 	padding: 8px;
 	background-color: #ffffff;
 	border-radius: 8px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 	animation: load 500ms ease-out;
 }
@@ -219,7 +233,7 @@ img {
 	border-radius: 8px;
 	width: calc(99% / 3 - 28px);
 	height: 76px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 	animation: load 500ms ease-out;
 }
@@ -233,18 +247,18 @@ img {
 }
 .YouTubeVideoThumbnail {
 	width: 128px;
-	height: 80px;
+	height: 80;
 	box-shadow: none;
 }
 .YouTubeVideoTitle {
-	margin-left: 150px;
+	margin-left: 150;
 	margin-top: -88px;
 }
 .YouTubeVideoDesc {
-	margin-left: 150px;
+	margin-left: 150;
 }
 .YouTubeVideoAuthour {
-	margin-left: 150px;
+	margin-left: 150;
 }
 .HamburgerMenu {
 	padding: 8px;
@@ -253,17 +267,17 @@ img {
 	width: 100%;
 	background-color: #101010;
 	border-radius: 16px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: slide_down_slightly 120ms ease-out;
 }
 .SubToPinku {
-	color: #404040px;
+	color: #404040;
 	animation: sub_to_pinku 1s ease-out infinite;
 }
 .TopBarBg {
 	position: fixed;
-	left: 0px;
-	top: 0px;
+	left: 0;
+	top: 0;
 	width: 100%;
 	height: 64px;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -282,7 +296,7 @@ img {
 	margin-bottom: 72px;
 }
 .FeedbackLink, .FeedbackLink:hover, .FeedbackLink:focus {
-	margin-left: 120px;
+	margin-left: 120;
 	margin-right: 128px;
 }
 .FeedbackLink:hover {
@@ -295,24 +309,48 @@ img {
 	width: calc(100% - 16px);
 	height: 255px;
 	object-fit: cover;
-	margin: 0px 8px;
+	margin: 0 8px;
 	border-radius: 8px;
 }
 .SlideshowText {
 	text-align: center;
 }
 .SideBarIcon {
-	margin: 0px;
+	margin: 0;
 	margin-right: 8px;
 	width: 16px;
-	border-radius: 8px;
 	height: 16px;
+	border-radius: 0;
 	box-shadow: none;
 }
 .Panel {
 	margin: 8px;
-	padding: 0px;
-	width: calc(100% - 20px);
+	padding: 0;
+	width: calc(100% - 20);
 	height: 75%;
 	border-style: inset;
+}
+.Toast {
+	padding: 8px;
+	position: fixed;
+	right: 4px;
+	top: 72px;
+	transform: translate(0, calc(-100% - 56px + 28px));
+	width: 25%;
+	background-color: #101010;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: toast 250ms ease-out;
+}
+.Toast:hover {
+	padding: 8px;
+	position: fixed;
+	right: 4px;
+	top: 72px;
+	transform: translate(0, calc(50% - 100% + 8px));
+	width: 25%;
+	background-color: #101010;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: toast_out 250ms ease-out;
 }
