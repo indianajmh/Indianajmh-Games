@@ -1,2 +1,2 @@
-# https://indianajmh.github.io/Indianajmh-Games/
+# https://discord.gg/W7e2hRn
 
