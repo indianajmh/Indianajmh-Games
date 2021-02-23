@@ -68,6 +68,14 @@
 		color: #ffffff;
 	}
 }
+@keyframes fade {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
 * {
 	overflow-x: hidden;
 }
@@ -295,17 +303,12 @@ img {
 .FeedbackLink:hover {
 	animation: link_hover2 250ms ease-out;
 }
-.SlideshowImageBase {
-	margin-top: -8px;
-}
 .SlideshowImage {
 	width: calc(100% - 16px);
 	height: 255px;
 	object-fit: cover;
 	margin: 0 8px;
-}
-.SlideshowText {
-	text-align: center;
+	margin-bottom: 8px;
 }
 .SideBarIcon {
 	margin: 0;
@@ -342,4 +345,58 @@ img {
 	padding: 6px;
 	transform: translate(0, calc(50% - 100% + 8px));
 	animation: toast_out 250ms ease-out;
+}
+* {
+	box-sizing: border-box-shadow;
+}
+.SlideshowContainer {
+	position: relative;
+}
+.Slides {
+	display: none;
+}
+.Prev, .Next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -28px;
+	padding: 16px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.Next {
+	right: 0;
+}
+.Prev:hover, .Next:hover {
+	margin-top: -32px;
+	background-color: rgba(0, 127, 255, 0.164);
+}
+.Text {
+	color: #ffffff;
+	font-size: 15px;
+	position: absolute;
+	bottom: 8px;
+	width: calc(100% - 16px);
+	text-align: center;
+}
+.Dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.Active, .Dot:hover {
+	background-color: #717171;
+}
+.Fade {
+	animation: fade 500ms ease-out;
+}
+.ShowImage {
+	display: block;
 }
