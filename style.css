@@ -29,39 +29,15 @@
 		background-color: rgba(0, 127, 255, 0.164);
 	}
 }
-@keyframes sub_to_pinku {
+@keyframes sub_to_indianajmh {
 	0% {
-		color: #ff0000;
-	}
-	10% {
-		color: #ff8800;
-	}
-	20% {
-		color: #ffff00;
-	}
-	30% {
-		color: #88ff00;
-	}
-	40% {
-		color: #00ff00;
+		color: #004488;
 	}
 	50% {
 		color: #0088ff;
 	}
-	60% {
-		color: #0000ff;
-	}
-	70% {
-		color: #8800ff;
-	}
-	80% {
-		color: #ff0000;
-	}
-	90% {
-		color: #646464;
-	}
 	100% {
-		color: #ff0000;
+		color: #004488;
 	}
 }
 @keyframes slide_down_slightly {
@@ -94,7 +70,6 @@
 }
 * {
 	overflow-x: hidden;
-	cursor: crosshair;
 }
 a {
 	color: #0088ff;
@@ -107,19 +82,24 @@ a:hover {
 	border-width: 4px;
 	border-color: rgba(0, 127, 255, 0.024);
 }
-audio {
-	display: none;
+a:focus {
+	color: #0088ff;
+	background-color: rgba(0, 127, 255, 0.164);
+	animation: link_hover 250ms ease-out;
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgba(0, 127, 255, 0.024);
 }
 body {
 	margin: 0;
-	background-color: #ffffff;
+	background-color: #88ccff;
 	animation: living_bg 3s ease-out infinite;
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin: 8px 8px;
 	font-family: 'Segoe UI', sans-serif;
 	animation: load 500ms ease-out;
-	color: #404040;
+	color: #101010;
 }
 h1 {
 	margin: 4px 8px;
@@ -128,7 +108,6 @@ h1 {
 }
 img {
 	margin: 8px;
-	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: load 500ms ease-out;
 }
@@ -176,7 +155,6 @@ img {
 	top: 8px;
 	width: 32px;
 	height: 32px;
-	border-radius: 4px;
 	background-color: #0088ff;
 }
 .PageTitlePC {
@@ -190,8 +168,7 @@ img {
 	padding: 8px;
 	top: 64px;
 	width: calc(15% - 12px);
-	background-color: #101010;
-	border-radius: 12px;
+	background-color: #ffffff;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: load 120ms ease-out;
 }
@@ -199,13 +176,18 @@ img {
 	position: fixed;
 	margin-top: 195px;
 }
+.SideBar:hover {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0, 127, 255, 1);
+	padding: 6px;
+}
 .Content {
 	padding: 8px;
 	margin-left: 4px;
 	margin-top: 64px;
 	width: calc(100% - 16px - 8px);
 	background-color: #e0e0e0;
-	border-radius: 16px;
 	animation: load 500ms ease-out;
 }
 .ContentPC {
@@ -213,29 +195,37 @@ img {
 	margin-left: calc(15% + 8px);
 	width: calc(85% - 12px - 4px);
 	background-color: #e0e0e0;
-	border-radius: 16px;
 	animation: load 500ms ease-out;
 }
 .Container {
 	margin: 8px;
 	padding: 8px;
 	background-color: #ffffff;
-	border-radius: 8px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 	animation: load 500ms ease-out;
+}
+.Container:hover {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0, 127, 255, 1);
+	padding: 6px;
 }
 .Blog {
 	margin: 8px;
 	padding: 8px;
 	float: left;
 	background-color: #ffffff;
-	border-radius: 8px;
 	width: calc(99% / 3 - 28px);
-	height: 76px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 	animation: load 500ms ease-out;
+}
+.Blog:hover {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0, 127, 255, 1);
+	padding: 6px;
 }
 .Seperator {
 	width: 100%;
@@ -266,13 +256,12 @@ img {
 	top: 64px;
 	width: 100%;
 	background-color: #101010;
-	border-radius: 16px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: slide_down_slightly 120ms ease-out;
 }
-.SubToPinku {
+.SubToIndianajmh {
 	color: #404040;
-	animation: sub_to_pinku 1s ease-out infinite;
+	animation: sub_to_indianajmh 2s linear infinite;
 }
 .TopBarBg {
 	position: fixed;
@@ -281,9 +270,13 @@ img {
 	width: 100%;
 	height: 64px;
 	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .WhiteText {
 	color: #e0e0e0;
+}
+.BlackText {
+	color: #101010;
 }
 .FeedbackTitle {
 	margin-left: 128px;
@@ -310,7 +303,6 @@ img {
 	height: 255px;
 	object-fit: cover;
 	margin: 0 8px;
-	border-radius: 8px;
 }
 .SlideshowText {
 	text-align: center;
@@ -322,6 +314,8 @@ img {
 	height: 16px;
 	border-radius: 0;
 	box-shadow: none;
+	-webkit-filter: invert(1);
+	filter: invert(1);
 }
 .Panel {
 	margin: 8px;
@@ -338,19 +332,14 @@ img {
 	transform: translate(0, calc(-100% - 56px + 28px));
 	width: 25%;
 	background-color: #101010;
-	border-radius: 8px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: toast 250ms ease-out;
 }
 .Toast:hover {
-	padding: 8px;
-	position: fixed;
-	right: 4px;
-	top: 72px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0, 127, 255, 1);
+	padding: 6px;
 	transform: translate(0, calc(50% - 100% + 8px));
-	width: 25%;
-	background-color: #101010;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	animation: toast_out 250ms ease-out;
 }
